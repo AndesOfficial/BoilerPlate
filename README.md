@@ -1,16 +1,56 @@
-# boilerplate
+# Andes Hiring Challenge
+Welcome to the Andes Flutter Hiring Challenge! This challenge is designed to assess your skills in Flutter development, Firebase integration, and clean UI design. Please follow the instructions below to complete the challenge.
 
-A new Flutter project.
+# Challenge Overview
+You are provided with a base boilerplate file structure. Your task is to build on top of this and complete the following:
 
-## Getting Started
+## Task 1: Create Login/Signup Page
+Objective: Build a login/signup page using Firebase Authentication.
+Requirements:
+Integrate Firebase Authentication for user login and signup.
+Ensure both email/password and Google sign-in methods are supported.
+Use clean and intuitive UI for the login/signup page.
 
-This project is a starting point for a Flutter application.
+## Task 2: Create a Simple App with a minimum of 3 Screens
+Objective: Develop a Flutter app that contains a minimum of 3 screens with a focus on clean UI design.
+Requirements:
+Screen 1: Home page (after successful login).
+Screen 2: Profile page (show basic user information).
+Screen 3-4: Any screen of your choice (e.g., Settings, Dashboard, or a simple feature relevant to the app).
+Ensure smooth navigation between screens and a cohesive design across all pages.
 
-A few resources to get you started if this is your first Flutter project:
+## Task 3: Package and Deliver
+Objective: Compile and package the app.
+Requirements:
+Create a new folder in the project named apk.
+Add the compiled APK of your app to this folder.
+Ensure the APK is functional and matches the project specifications.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Scoring Criteria
+Your submission will be evaluated based on the following criteria:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Simplicity & Ease of Understanding of Code
+Is the code easy to read and understand?
+Are comments used where necessary?
+Is the project well-organized with a clear structure?
+
+### UI/UX
+Is the user interface clean and visually appealing?
+Is the user experience smooth with intuitive navigation?
+Do all screens maintain a consistent look and feel?
+
+### Creativity 
+How creative are the design and functionality of the app?
+Are there any unique or innovative features included?
+
+### Best Practices
+Does the project follow Flutter and Firebase best practices?
+Is the code DRY (Don't Repeat Yourself) and modularized?
+Are services, views, and widgets properly separated?
+
+### Commits & Messages
+Are Git commits frequent and meaningful?
+Do commit messages clearly describe the changes made?
+
+## Queries?
+for any doubts and query feel free to mail us at andesnow1604@gmail.com or saubhagyasingh65@gmail.com
