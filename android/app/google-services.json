@@ -7,7 +7,7 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:218972203867:android:ecf8e17d98d60c0727c87e",
+        "mobilesdk_app_id": " ",
         "android_client_info": {
           "package_name": "com.example.boilerplate"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBnyxLnR15Dv7I9n77SG6WNl5RmA5W3UHQ"
+          "current_key": " "
         }
       ],
       "services": {
