@@ -1,30 +1,40 @@
-// This is a basic Flutter widget test.
-//
-// To perform an interaction with a widget in your test, use the WidgetTester
-// utility in the flutter_test package. For example, you can send tap and scroll
-// gestures. You can also use WidgetTester to find child widgets in the widget
-// tree, read text, and verify that the values of widget properties are correct.
-
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-
 import 'package:boilerplate/main.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyApp());
+  testWidgets('Initial route is SignInPage', (WidgetTester tester) async {
+    // Build the app and trigger a frame.
+    await tester.pumpWidget(MyApp());
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
+    // Verify that the SignInPage is displayed on initial load.
+    expect(find.text('Sign In'), findsOneWidget);
+    expect(find.text('Sign Up'), findsNothing);
+  });
 
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
+  testWidgets('Navigate to SignUpPage', (WidgetTester tester) async {
+    // Build the app and trigger a frame.
+    await tester.pumpWidget(MyApp());
 
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+    // Tap on the "Sign Up" text or button (adjust based on your UI).
+    await tester.tap(find.text('Sign Up'));
+    await tester.pumpAndSettle(); // Wait for animations to complete.
+
+    // Verify that the SignUpPage is displayed.
+    expect(find.text('Sign Up'), findsOneWidget);
+    expect(find.text('Sign In'), findsNothing);
+  });
+
+  testWidgets('Navigate to HomePage after signing in', (WidgetTester tester) async {
+    // Build the app and trigger a frame.
+    await tester.pumpWidget(MyApp());
+
+    // Simulate tapping the sign-in button (adjust based on your UI).
+    await tester.tap(find.text('Sign In'));
+    await tester.pumpAndSettle(); // Wait for animations to complete.
+
+    // Verify that the HomePage is displayed.
+    expect(find.text('Home'), findsOneWidget);
+    expect(find.text('Sign In'), findsNothing);
   });
 }
