@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "218972203867",
+    "project_id": "first-3510b",
+    "storage_bucket": "first-3510b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:218972203867:android:ecf8e17d98d60c0727c87e",
+        "android_client_info": {
+          "package_name": "com.example.boilerplate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnyxLnR15Dv7I9n77SG6WNl5RmA5W3UHQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
